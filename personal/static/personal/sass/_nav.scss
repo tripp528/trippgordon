@@ -22,6 +22,7 @@
     flex-direction: column;
 
     width: $sidebar-base-width;
+    min-width: $sidebar-base-min-width;
     height: 100vh;
     .navbar-brand {
       display: flex;

@@ -25,8 +25,13 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
-$primary:       $orange !default;
-$secondary:     $gray-600 !default;
+$newSchemeTeal: #45A29E;
+$newSchemeBlack: #0B0C10;
+$gradient: -webkit-gradient(linear, left top, left   bottom, from($newSchemeTeal), to($newSchemeBlack), color-stop(1, #eee));
+
+$primaryGrad:   $gradient !default;
+$primary:       $newSchemeTeal !default;
+$secondary:     $newSchemeBlack !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -36,4 +41,5 @@ $dark:          $gray-800 !default;
 
 // Page Variables
 
-$sidebar-base-width: 17rem;
+$sidebar-base-width: 20%;
+$sidebar-base-min-width: 17rem;
