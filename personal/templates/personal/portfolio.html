@@ -3,53 +3,81 @@
 
 <div class="container-fluid p-0">
     <div class="row justify-content-center  vertical-center">
-      <div class="col-lg-6 accordion" id="accordionExample" data-parent="#accordionExample">
+      <div class="col-lg-8 accordion" id="accordionExample" data-parent="#accordionExample">
+
+        <!-- circadence -->
         <div class="card" >
           <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" type="button" >
-                Collapsible Group Item #1
-              </button>
+              Work at Circadence
             </h5>
           </div>
-
           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              {% load staticfiles %}
+              <a href="http://circadence.trippgordon.com" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/circadence2.png"%}" alt=""></a>
             </div>
           </div>
         </div>
+
+        <!-- bi -->
         <div class="card" >
           <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button">
-                Collapsible Group Item #2
-              </button>
+              Bolder Industries Web Development
             </h5>
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <a href="http://bi.trippgordon.com" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/bisite.png"%}" alt=""></a>
             </div>
           </div>
         </div>
+
+        <!-- GB -->
         <div class="card">
           <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button">
-                Collapsible Group Item #3
-              </button>
+              Guardberry Pi
             </h5>
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <div align="center" class="embed-responsive embed-responsive-16by9">
+                <video controls muted class="embed-responsive-item">
+                    <source src="{% static "personal/img/gpi/vid.mp4"%}" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Blast -->
+        <div class="card">
+          <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <h5 class="mb-0">
+              A Blast From the Past
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="row">
+                <div class="col 4">
+                  <a href="https://github.com/tripp528/A-Blast-From-The-Past" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/blast/blastmenu.png"%}" alt=""></a>
+                </div>
+                <div class="col 4">
+                  <a href="https://github.com/tripp528/A-Blast-From-The-Past" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/blast/blast1.png"%}" alt=""></a>
+                </div>
+                <div class="col 4">
+                  <a href="https://github.com/tripp528/A-Blast-From-The-Past" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/blast/blastScore.png"%}" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
-
 </div>
-
 {% endblock %}
