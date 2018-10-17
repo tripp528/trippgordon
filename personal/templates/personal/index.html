@@ -14,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link href="{% static "personal/vendor/fontawesome-free/css/all.min.css" %}" rel="stylesheet">
     <link href="{% static "personal/css/resume.css"%}" rel="stylesheet">
-    <!--PING-->
-    <script src="{% static "personal/js/ping.js"%}"></script>
   </head>
   <body id="page-top">
     <!-- Nav -->
@@ -52,9 +50,18 @@
     <script src="{% static "personal/vendor/bootstrap/js/bootstrap.bundle.min.js"%}"></script>
     <script src="{% static "personal/vendor/jquery-easing/jquery.easing.min.js"%}"></script>
     <script src="{% static "personal/js/resume.min.js"%}"></script>
+    <!--PING-->
+    <script src="{% static "personal/js/ping.js"%}"></script>
     <script>
-      ping('http://bi.trippgordon.com');
-      ping('http://circadence.trippgordon.com');
+      // images to be preloaded
+      var circadence2 = "{% static "personal/img/circadence2.png"%}";
+      var bisite = "{% static "personal/img/bisite.png"%}";
+      var blast1 = "{% static "personal/img/blast/blast1.png"%}";
+      var blastmenu = "{% static "personal/img/blast/blastmenu.png"%}";
+      var blastScore = "{% static "personal/img/blast/blastScore.png"%}";
+      var fakenews = "{% static "personal/img/blast/fakenews.png"%}";
+      var imgarray=[circadence2,bisite,blast1,blastmenu,blastScore]
     </script>
+    <script src="{% static "personal/js/preloader.js"%}"></script>
   </body>
 </html>

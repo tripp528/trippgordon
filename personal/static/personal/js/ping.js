@@ -44,3 +44,7 @@
 
     return ping;
 }));
+
+// ping other webapps
+ping('http://bi.trippgordon.com');
+ping('http://circadence.trippgordon.com');
