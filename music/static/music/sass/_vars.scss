@@ -32,6 +32,8 @@ $leftRightWidth: 5*$colorBarWidth;
 
 //color
 $textColor: transparent;
+$textBG: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5)), url('http://1389blog.com/pix/white256.jpg');
+
 $darken: 8;
 $maniacC1: darken($green,13);
 $maniacC2: darken($maniacC1,$darken);

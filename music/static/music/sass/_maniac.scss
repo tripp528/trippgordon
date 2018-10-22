@@ -2,6 +2,8 @@
   font-family: 'Maniac-Logo';
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/394353/rockb.ttf");
 }
+
+/*
 html, body {
   background: $maniacC_main;
   color: white;
@@ -15,10 +17,12 @@ html, body {
   width: 100%;
   margin: 0;
 }
+*/
 
-h1 {
+#maniacText {
   font-size: $fontsize;
-  background: url("http://1389blog.com/pix/white256.jpg") center;
+  //background: url("http://1389blog.com/pix/white256.jpg") center;
+  background: $textBG center;
   -webkit-background-clip: text;
           background-clip: text;
   background-size: 800px 200px;

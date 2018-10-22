@@ -1,6 +1,23 @@
 {% extends "music/music.html" %}
 {% block content %}
 
+<div id="lampadario">
+  <input type="radio" name="switch" value="on" />
+  <input type="radio" name="switch" value="off" checked="checked"/>
+  <label for="switch"></label>
+  <div id="filo"></div>
+  <div id="lampadina">
+    <div id="sorpresa">
+      <div id="footer">
+          Hello there!
+      </div>
+      <div id="shadow">
+          Hello there!
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="left">
   <div id="one"></div>
   <div id="two"></div>
@@ -9,7 +26,7 @@
   <div id="five"></div>
 </div>
 <div id="maniac">
-  <h1>Tripp Gordon</h1>
+  <h1 id="maniacText">Tripp Gordon</h1>
 </div>
 <div id="right">
   <div id="one"></div>
