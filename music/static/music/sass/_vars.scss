@@ -12,7 +12,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
-
+//rando colors
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -24,20 +24,50 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
-//maniac
-//size
-$fontsize: 4vw;
-$colorBarWidth: 4vw;
+// 5 colorscheme
+$c1: #4B494E;
+$c2: #807B82;
+$c3: #61829E;
+$c4: #446683;
+$c5: mix(#A09183,$c1);
+
+// size of text and bars
+$fontsize: 7vw;
+$colorBarWidth: 3.5vw;
 $leftRightWidth: 5*$colorBarWidth;
-
-//color
+// text color
 $textColor: transparent;
-$textBG: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5)), url('http://1389blog.com/pix/white256.jpg');
+$textBG: linear-gradient( $c3, $c4), url('http://1389blog.com/pix/white256.jpg');
+//bar colors
+$transparentAmount: .15;
+$maniacC1: transparentize($c1,1*$transparentAmount);
+$maniacC2: transparentize($c2,2*$transparentAmount);
+$maniacC3: transparentize($c3,3*$transparentAmount);
+$maniacC4: transparentize($c4,4*$transparentAmount);
+$maniacC5: transparentize($c5,6*$transparentAmount);
 
-$darken: 8;
-$maniacC1: darken($green,13);
-$maniacC2: darken($maniacC1,$darken);
-$maniacC3: darken($maniacC2,$darken);
-$maniacC4: darken($maniacC3,$darken);
-$maniacC5: darken($maniacC4,$darken);
-$maniacC_main: darken($maniacC4,$darken)
+// BACKGROUND
+$lightsBG1: $c1;
+$lightsBG2: darken($c5,10);
+$lightsBG3: $c1;
+// gradient width
+$gradientWidth: 100% - 50%;
+$middleGradPosition: 50%;
+$leftGradPosition: $gradientWidth/2;
+$rightGradPosition: 100% - $gradientWidth/2;
+
+// BUTTON
+$buttonHoverColor: #191919;
+$shimmerOnClick: $c5;
+$buttonColor: $c5;
+$buttonWidth: 185px;
+$buttonHeight: 60px;
+$font: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+
+// ANIMATIONS
+$mainTime: 2s;
+$waitTime: 1s;
+$repeats: 1;
+$animationDirection: forwards;
+$start: 0;
+$end: 100;

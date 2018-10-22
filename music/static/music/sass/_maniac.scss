@@ -3,22 +3,6 @@
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/394353/rockb.ttf");
 }
 
-/*
-html, body {
-  background: $maniacC_main;
-  color: white;
-  display: flex;
-  font-family: 'Maniac-Logo', serif;
-  overflow: hidden;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-*/
-
 #maniacText {
   font-size: $fontsize;
   //background: url("http://1389blog.com/pix/white256.jpg") center;
@@ -30,8 +14,10 @@ html, body {
   background-repeat: repeat-x;
   color: $textColor;
   transition: all 1s;
-  -webkit-animation: appear 2s 1.75s 1 forwards;
-          animation: appear 2s 1.75s 1 forwards;
+  -webkit-animation: appear $mainTime $waitTime $repeats $animationDirection;
+          animation: appear $mainTime $waitTime $repeats $animationDirection;
+
+
 }
 
 #left, #right {
@@ -49,68 +35,68 @@ html, body {
 #left > #one,
 #right > #five {
   background: $maniacC1;
-  -webkit-animation: extend 2s 1 forwards;
-          animation: extend 2s 1 forwards;
+  -webkit-animation: extend $mainTime $repeats $animationDirection;
+          animation: extend $mainTime $repeats $animationDirection;
 }
 
 #left > #two,
 #right > #four {
   background: $maniacC2;
-  -webkit-animation: extend 2s .25s 1 forwards;
-          animation: extend 2s .25s 1 forwards;
+  -webkit-animation: extend $mainTime $waitTime*.25 $repeats $animationDirection;
+          animation: extend $mainTime $waitTime*.25 $repeats $animationDirection;
 }
 
 #left > #three,
 #right > #three {
   background: $maniacC3;
-  -webkit-animation: extend 2s .5s 1 forwards;
-          animation: extend 2s .5s 1 forwards;
+  -webkit-animation: extend $mainTime $waitTime*.5 $repeats $animationDirection;
+          animation: extend $mainTime $waitTime*.5 $repeats $animationDirection;
 }
 
 #left > #four,
 #right > #two {
   background: $maniacC4;
-  -webkit-animation: extend 2s .75s 1 forwards;
-          animation: extend 2s .75s 1 forwards;
+  -webkit-animation: extend $mainTime $waitTime*.75 $repeats $animationDirection;
+          animation: extend $mainTime $waitTime*.75 $repeats $animationDirection;
 }
 
 #left > #five,
 #right > #one {
   background: $maniacC5;
-  -webkit-animation: extend 2s 1s 1 forwards;
-          animation: extend 2s 1s 1 forwards;
+  -webkit-animation: extend $mainTime $waitTime*1 $repeats $animationDirection;
+          animation: extend $mainTime $waitTime*1 $repeats $animationDirection;
 }
 
 @-webkit-keyframes extend {
   from {
-    height: 0;
+    height: $start*1%;
   }
   to {
-    height: 100%;
+    height:  $end*1%;
   }
 }
 
 @keyframes extend {
   from {
-    height: 0;
+    height: $start*1%;
   }
   to {
-    height: 100%;
+    height:  $end*1%;
   }
 }
 @-webkit-keyframes appear {
   from {
-    background-position: 0px 300px;
+    background-position: $start*1px  $end*3px;
   }
   to {
-    background-position: 0px 0px;
+    background-position: $start*1px $start*1px;
   }
 }
 @keyframes appear {
   from {
-    background-position: 0px 300px;
+    background-position: $start*1px  $end*3px;
   }
   to {
-    background-position: 0px 0px;
+    background-position: $start*1px $start*1px;
   }
 }

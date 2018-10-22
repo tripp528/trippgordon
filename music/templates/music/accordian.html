@@ -1,0 +1,85 @@
+{% extends "music/music.html" %}
+{% block content %}
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+
+<div class="container-fluid p-0 justify-content-center">
+  <div class="row justify-content-center  vertical-center">
+    <div class='acc col-lg-8'>
+      <div class='acc_inner'>
+        <input checked='' id='tab-1' name='buttons' type='radio'>
+        <label for='tab-1'>
+          <div class='acc_inner__tab'>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hsI_F9qJWzo"></iframe>
+            </div>
+          </div>
+        </label>
+        <input false='' id='tab-2' name='buttons' type='radio'>
+        <label for='tab-2'>
+          <div class='acc_inner__tab'>
+            <h2>
+              <i class='icon ion-android-alarm-clock'></i>
+              10am - 12am
+            </h2>
+            <div class='tab_left'>
+              <i class='big icon ion-music-note'></i>
+              <div class='tab_left__image'>
+                <i class='icon ion-music-note'></i>
+              </div>
+            </div>
+            <div class='tab_right'>
+              <h3>Arctic Monkeys Live</h3>
+              <h4>Monday - Wednesday</h4>
+              <p>Music for your lug holes</p>
+              <button>More information</button>
+            </div>
+          </div>
+        </label>
+        <input false='' id='tab-3' name='buttons' type='radio'>
+        <label for='tab-3'>
+          <div class='acc_inner__tab'>
+            <h2>
+              <i class='icon ion-android-alarm-clock'></i>
+              12am - 4pm
+            </h2>
+            <div class='tab_left'>
+              <i class='big icon ion-android-microphone'></i>
+              <div class='tab_left__image'>
+                <i class='icon ion-android-microphone'></i>
+              </div>
+            </div>
+            <div class='tab_right'>
+              <h3>Steven Fry podcast</h3>
+              <h4>Staurday - Sunday</h4>
+              <p>Steven Fry says words</p>
+              <button>More information</button>
+            </div>
+          </div>
+        </label>
+        <input false='' id='tab-4' name='buttons' type='radio'>
+        <label for='tab-4'>
+          <div class='acc_inner__tab'>
+            <h2>
+              <i class='icon ion-android-alarm-clock'></i>
+              4pm - 8pm
+            </h2>
+            <div class='tab_left'>
+              <i class='big icon ion-android-bar'></i>
+              <div class='tab_left__image'>
+                <i class='icon ion-android-bar'></i>
+              </div>
+            </div>
+            <div class='tab_right'>
+              <h3>Massive event</h3>
+              <h4>Monday - Friday</h4>
+              <p>Some kind of music festival</p>
+              <button>More information</button>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
