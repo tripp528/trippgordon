@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Maniac-Logo';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/394353/rockb.ttf");
+}
+html, body {
+  background: $maniacC_main;
+  color: white;
+  display: flex;
+  font-family: 'Maniac-Logo', serif;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: $fontsize;
+  background: url("http://1389blog.com/pix/white256.jpg") center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: 800px 200px;
+  background-position: 0 300px;
+  background-repeat: repeat-x;
+  color: $textColor;
+  transition: all 1s;
+  -webkit-animation: appear 2s 1.75s 1 forwards;
+          animation: appear 2s 1.75s 1 forwards;
+}
+
+#left, #right {
+  display: flex;
+  width: $leftRightWidth;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#left > *, #right * {
+  height: 0;
+  width: $colorBarWidth;
+}
+
+#left > #one,
+#right > #five {
+  background: $maniacC1;
+  -webkit-animation: extend 2s 1 forwards;
+          animation: extend 2s 1 forwards;
+}
+
+#left > #two,
+#right > #four {
+  background: $maniacC2;
+  -webkit-animation: extend 2s .25s 1 forwards;
+          animation: extend 2s .25s 1 forwards;
+}
+
+#left > #three,
+#right > #three {
+  background: $maniacC3;
+  -webkit-animation: extend 2s .5s 1 forwards;
+          animation: extend 2s .5s 1 forwards;
+}
+
+#left > #four,
+#right > #two {
+  background: $maniacC4;
+  -webkit-animation: extend 2s .75s 1 forwards;
+          animation: extend 2s .75s 1 forwards;
+}
+
+#left > #five,
+#right > #one {
+  background: $maniacC5;
+  -webkit-animation: extend 2s 1s 1 forwards;
+          animation: extend 2s 1s 1 forwards;
+}
+
+@-webkit-keyframes extend {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes extend {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@-webkit-keyframes appear {
+  from {
+    background-position: 0px 300px;
+  }
+  to {
+    background-position: 0px 0px;
+  }
+}
+@keyframes appear {
+  from {
+    background-position: 0px 300px;
+  }
+  to {
+    background-position: 0px 0px;
+  }
+}

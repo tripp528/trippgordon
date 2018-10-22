@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Maniac-Logo';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/394353/rockb.ttf"); }
+
+html, body {
+  background: black;
+  color: white;
+  display: flex;
+  font-family: 'Maniac-Logo', serif;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+h1 {
+  font-size: 4vw;
+  background: url("http://1389blog.com/pix/white256.jpg") center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 800px 200px;
+  background-position: 0 300px;
+  background-repeat: repeat-x;
+  color: transparent;
+  transition: all 1s;
+  -webkit-animation: appear 2s 1.75s 1 forwards;
+  animation: appear 2s 1.75s 1 forwards; }
+
+#left, #right {
+  display: flex;
+  width: 20vw;
+  justify-content: space-around;
+  height: 100%; }
+
+#left > *, #right * {
+  height: 0;
+  width: 4vw; }
+
+#left > #one,
+#right > #five {
+  background: #1b722f;
+  -webkit-animation: extend 2s 1 forwards;
+  animation: extend 2s 1 forwards; }
+
+#left > #two,
+#right > #four {
+  background: #135121;
+  -webkit-animation: extend 2s .25s 1 forwards;
+  animation: extend 2s .25s 1 forwards; }
+
+#left > #three,
+#right > #three {
+  background: #0b3014;
+  -webkit-animation: extend 2s .5s 1 forwards;
+  animation: extend 2s .5s 1 forwards; }
+
+#left > #four,
+#right > #two {
+  background: #040f06;
+  -webkit-animation: extend 2s .75s 1 forwards;
+  animation: extend 2s .75s 1 forwards; }
+
+#left > #five,
+#right > #one {
+  background: black;
+  -webkit-animation: extend 2s 1s 1 forwards;
+  animation: extend 2s 1s 1 forwards; }
+
+@-webkit-keyframes extend {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+
+@keyframes extend {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+
+@-webkit-keyframes appear {
+  from {
+    background-position: 0px 300px; }
+  to {
+    background-position: 0px 0px; } }
+
+@keyframes appear {
+  from {
+    background-position: 0px 300px; }
+  to {
+    background-position: 0px 0px; } }
