@@ -56,7 +56,7 @@ $middleGradPosition: 50%;
 $leftGradPosition: $gradientWidth/2;
 $rightGradPosition: 100% - $gradientWidth/2;
 
-// BUTTON
+// OPENING PAGE BUTTON
 $buttonHoverColor: #191919;
 $shimmerOnClick: $c5;
 $buttonColor: $c5;
@@ -64,10 +64,15 @@ $buttonWidth: 185px;
 $buttonHeight: 60px;
 $font: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
 
-// ANIMATIONS
+// OPENING PAGE ANIMATIONS
 $mainTime: 2s;
 $waitTime: 1s;
 $repeats: 1;
 $animationDirection: forwards;
 $start: 0;
 $end: 100;
+
+// ACCORDIAN ANIMATION
+$mainacctime: 2s;
+$iconacctime: .5s;
+$accColor: $c4;
