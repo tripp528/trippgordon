@@ -1,0 +1,97 @@
+{% extends "personal/index.html" %}
+{% block content %}
+
+<div class="container-fluid p-0">
+    <div class="row justify-content-center  vertical-center">
+      <div class="col-lg-8 accordion" id="accordionExample" data-parent="#accordionExample">
+
+        <!-- circadence -->
+        <div class="card" >
+          <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h5 class="mb-0">
+              Work at Circadence
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              {% load staticfiles %}
+              <a href="http://circadence.trippgordon.com" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/circadence2.png"%}" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- bi -->
+        <div class="card" >
+          <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h5 class="mb-0">
+              Bolder Industries Web Development
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <a href="http://bi.trippgordon.com" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/bisite.png"%}" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- trees -->
+        <div class="card" >
+          <div class="card-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <h5 class="mb-0">
+              Trees Empirical Investigation
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+              <a href="https://github.com/tripp528/BST-vs-AVL-vs-Splay-trees" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/trees.png"%}" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- GB -->
+        <div class="card">
+          <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h5 class="mb-0">
+              Guardberry Pi
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <div align="center" class="embed-responsive embed-responsive-16by9">
+                <video controls muted class="embed-responsive-item">
+                    <source src="{% static "personal/img/gpi/vid.mp4"%}" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blast -->
+        <div class="card">
+          <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <h5 class="mb-0">
+              A Blast From the Past
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="row">
+                <div class="col 4">
+                  <a href="https://github.com/tripp528/A-Blast-From-The-Past" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/blast/blastmenu.png"%}" alt=""></a>
+                </div>
+                <div class="col 4">
+                  <a href="https://github.com/tripp528/A-Blast-From-The-Past" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/blast/blast1.png"%}" alt=""></a>
+                </div>
+                <div class="col 4">
+                  <a href="https://github.com/tripp528/A-Blast-From-The-Past" target="_blank" ><img class="img-fluid mx-auto mb-2" src="{% static "personal/img/blast/blastScore.png"%}" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+</div>
+{% endblock %}

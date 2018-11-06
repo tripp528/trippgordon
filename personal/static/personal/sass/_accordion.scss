@@ -13,3 +13,67 @@ body {
   display: flex;
   align-items: center;
 }
+
+.tab * {
+  margin: 0;
+}
+
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: $accColor;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height $mainacctime;
+  -o-transition: max-height $mainacctime;
+  transition: max-height $mainacctime;
+}
+.tab-content p {
+  margin: 1em;
+}
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+/* Icon */
+.tab label::after {
+  font-size: 40px;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all $iconacctime;
+  -o-transition: all $iconacctime;
+  transition: all $iconacctime;
+}
+.tab input[type=checkbox] + label::after {
+  content: "+";
+}
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
